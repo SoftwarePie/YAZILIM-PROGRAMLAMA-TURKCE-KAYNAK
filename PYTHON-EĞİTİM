@@ -1,0 +1,52 @@
+#DEGİSKENLER VE STRING ÖZELLİKLER
+counter = 100; # tam sayı integer 
+length = 1000.0; # float ondalıklı sayi
+name = "Ferhat"; # string 
+
+x = 3; # x ' e 3 atadık 3 = integer yani tam sayi
+ 
+metin = "3"; # string ifadedir yani dizi yani string 
+
+print(x + 10);   #integer ifade ile integer ifade toplanabilir
+print(int(metin) + 10 ); #metin string tipde olduğunda int dönüşüümden sonra toplanmalıdır
+
+okulNo = "212545"    # string okulNo girildi
+
+print(float(okulNo) + 10); #floata dönüştürüp toplandı
+
+
+floatSayi = 10;    # bu float değil
+floatSayi1 = 15.0;  # float
+
+geldimi = False;         #boolean tanımlandı 0
+
+#type
+print(type(geldimi));      #tipi öğrenildi
+print(type(floatSayi1)); #tipi öğrenildi
+print(type(x));   #tipi öğrenildi
+print(type(metin));  #tipi öğrenildi
+
+
+message = "Merhaba piton";
+newMessage ="MerHabA PitOn";
+
+# lower upper
+print(message.upper());    # tüm harfleri büyült 
+print(newMessage.lower()); # tüm harfleri küçült
+
+#split ve strip
+print(newMessage[3:6]);  # 3den başla 6 ya kadar 
+newMessage2=("      bırgün;buralardan;geçerken;33").strip(); #boşlukları al
+print(newMessage2);
+print(newMessage2.split(";")[0]);  # böl ama benim indeximle defaul olan boşluktur
+print("yasi =" + newMessage2.split(";")[3])
+print(newMessage2.replace("ı" , "i"));
+
+#input
+ad = input("Adiniz ?")       # input ad istedik
+print("senin adın = " + ad)
+
+sayi1 = input("sayi 1 gir = ") # input sayi1 istedik
+sayi2 = input("sayi 2 gir = ") # input sayi2 istedik
+print(sayi1 + sayi2);          #metinsel olacağı için toplamaz
+print(int(sayi1)+int(sayi2));  # int dönüştürdüm toplayacaktır
