@@ -21,10 +21,10 @@ floatSayi1 = 15.0;  # float
 geldimi = False;         #boolean tanımlandı 0
 
 #type
-print(type(geldimi));      #tipi öğrenildi
-print(type(floatSayi1)); #tipi öğrenildi
-print(type(x));   #tipi öğrenildi
-print(type(metin));  #tipi öğrenildi
+print(type(geldimi));      #tipi öğrenildi çıktı = boolean
+print(type(floatSayi1)); #tipi öğrenildi çıktı = float
+print(type(x));   #tipi öğrenildi  çıktı = integer
+print(type(metin));  #tipi öğrenildi çıktı = string
 
 
 message = "Merhaba piton";
