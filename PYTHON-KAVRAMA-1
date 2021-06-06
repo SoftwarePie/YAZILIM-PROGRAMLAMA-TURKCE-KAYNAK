@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*- unicode dönüşüm formatı
 
-# değişkenlerin değerlerini değiştirmek için yöntem 1 = 
+
 x = 50          # x değişkenşne int 50 atandı
 y = 100         # y değişkenine int 100 atandı
 
-
+# değişkenlerin değerlerini değiştirmek için yöntem 1 = 
 # =============================================================================
 # temporary = x    # temporary(tr = geçici) değişkene x i atadık
 # x = y            # x değişkenini y yi atadık
