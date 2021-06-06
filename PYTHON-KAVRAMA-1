@@ -1,0 +1,41 @@
+# -*- coding: utf-8 -*- unicode dönüşüm formatı
+
+# değişkenlerin değerlerini değiştirmek için yöntem 1 = 
+x = 50          # x değişkenşne int 50 atandı
+y = 100         # y değişkenine int 100 atandı
+
+
+# =============================================================================
+# temporary = x    # temporary(tr = geçici) değişkene x i atadık
+# x = y            # x değişkenini y yi atadık
+# y = temporary    # y değişkenini temprorary e atadık ve değişkenin değerini değiştirdik
+# =============================================================================
+
+#CTRL + 4 toplu yorum satırı yapar iptali için CTRL + 5
+
+#değişkenlerin değerini değiştirmek için yöntem 2 =
+
+x,y = y,x # x in değerini y y'nin değerini x için değiştir
+
+print("x = "  + str(x))      # x 'i yazdırıyoruz
+print("y = "  + str(y))      # y 'yi yazdırıyoruz
+
+
+
+# olayları kavrama odaklı küçük bir uygulama
+"""      
+ses kaynağına olan mesafeyi hesaplama
+sesin havadaki hızı(343 Metre/saniye) x Geçen süre = Mesafe
+şimşeğin uzaklığını hesaplıyoruz
+"""
+sesHizi = 343 # int değişken girildi
+
+konum = int(input("Işıktan kaç saniye sonra sesi duydunuz = ")) # str biçimininde input girildi ve int tipinde konuma atandı
+
+mesafe = sesHizi * konum  # mesafe hesabı için iki değer çarpılık atandı
+
+print("yıldırıma olan uzaklığınız = " + str(mesafe) +" metredir" )# çıktı olarak mesafeyi yazdırdık
+
+km = mesafe / 1000; # mesafemizi km biçimine döküyoruz
+
+print("buda " + str(km) + "km yapmaktadır.") # mesafenin yeni km halini yazdırıyoruz
